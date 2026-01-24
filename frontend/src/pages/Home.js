@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, Clock, Search, Users, Star, MessageCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, Clock, Search, Users, Star, MessageCircle, Award, BookOpen } from 'lucide-react';
 import { mockData, generateWhatsAppLink } from '../data/mock';
 
 const Home = () => {
