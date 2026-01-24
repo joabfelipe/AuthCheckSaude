@@ -1,19 +1,19 @@
-// Mock data para Auto Check Saúde - Oficina Mecânica
+// Auto Check Saúde - Dados Reais da Empresa
 export const mockData = {
   company: {
     name: 'Auto Check Saúde',
-    tagline: 'Cuidando da saúde do seu veículo com excelência técnica',
+    tagline: 'Segurança & Qualidade em serviços de reparação automotiva',
     phone: '(11) 4063-0515',
     whatsapp: '5511940630515',
     email: 'contato@autochecksaude.com.br',
-    address: 'Av. do Cursino, 2012 - Vila da Saúde, São Paulo - SP',
-    workingHours: 'Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h'
+    address: 'Av. do Cursino, 2012 - Jardim da Saúde, São Paulo - SP, CEP 04132-001',
+    workingHours: 'Segunda a Sexta: 8h às 19h | Sábado: 8h às 14h'
   },
   
   hero: {
-    title: 'A Saúde do Seu Veículo em Primeiro Lugar',
-    subtitle: 'Check-ups preventivos, diagnósticos precisos e reparos de qualidade. Mantenha seu veículo sempre em perfeito estado com nossos serviços especializados.',
-    primaryCTA: 'Agendar Check-up',
+    title: 'Segurança & Qualidade em Reparação Automotiva',
+    subtitle: 'Seguimos normas da ABNT com profissionais constantemente treinados e capacitados. Estamos em constante aperfeiçoamento para atender suas expectativas na manutenção preventiva do seu automóvel, gerando segurança em sua mobilidade.',
+    primaryCTA: 'Check-up Gratuito',
     secondaryCTA: 'Falar com Especialista'
   },
   
