@@ -43,35 +43,67 @@ export const mockData = {
   services: [
     {
       id: 1,
-      title: 'Check-up Automotivo Completo',
-      description: 'Revisão preventiva abrangente do seu veículo com diagnóstico eletrônico, análise de fluidos e inspeção geral.',
-      benefits: ['Diagnóstico eletrônico completo', 'Análise de fluidos e filtros', 'Inspeção de freios e suspensão', 'Relatório técnico detalhado'],
-      target: 'Ideal para manutenção preventiva regular',
-      price: 'A partir de R$ 150'
-    },
-    {
-      id: 2,
-      title: 'Serviços de Usinagem Automotiva',
-      description: 'Usinagem de precisão para motores e componentes, incluindo retífica de blocos, cabeçotes e peças especiais.',
-      benefits: ['Retífica de motor completa', 'Usinagem de cabeçotes', 'Brunimento de cilindros', 'Balanceamento de conjuntos'],
-      target: 'Para reparos de motor e recondicionamento',
+      title: 'Injeção Eletrônica',
+      description: 'Diagnóstico e reparo completo do sistema de injeção eletrônica com equipamentos de última geração e profissionais especializados.',
+      benefits: ['Diagnóstico eletrônico avançado', 'Limpeza de bicos injetores', 'Regulagem e calibragem', 'Teste de componentes'],
+      target: 'Veículos com falhas no sistema de alimentação',
       price: 'Sob orçamento'
     },
     {
+      id: 2,
+      title: 'Motor',
+      description: 'Serviços completos de motor incluindo retífica, usinagem, montagem e todos os reparos necessários.',
+      benefits: ['Retífica completa', 'Usinagem de precisão', 'Montagem e regulagem', 'Teste de compressão'],
+      target: 'Motores com desgaste ou problemas internos',
+      price: 'Orçamento personalizado'
+    },
+    {
       id: 3,
-      title: 'Manutenção Preventiva',
-      description: 'Serviços regulares de manutenção para manter seu veículo sempre em perfeito funcionamento.',
-      benefits: ['Troca de óleo e filtros', 'Alinhamento e balanceamento', 'Revisão de freios', 'Manutenção do ar-condicionado'],
-      target: 'Manutenção regular conforme manual do fabricante',
+      title: 'Sistema Elétrico',
+      description: 'Nossa especialidade original. Diagnóstico e reparo completo do sistema elétrico automotivo.',
+      benefits: ['Diagnóstico elétrico completo', 'Reparo de alternadores', 'Sistemas de ignição', 'Instalação de acessórios'],
+      target: 'Problemas elétricos em geral',
       price: 'A partir de R$ 80'
     },
     {
       id: 4,
-      title: 'Reparo de Motor',
-      description: 'Reparos especializados em motores com diagnóstico avançado e soluções técnicas de alta qualidade.',
-      benefits: ['Diagnóstico de falhas', 'Reparo de componentes internos', 'Teste de compressão', 'Garantia nos serviços'],
-      target: 'Para veículos com problemas de motor identificados',
-      price: 'Orçamento personalizado'
+      title: 'Ar-condicionado',
+      description: 'Manutenção e reparo completo do sistema de ar-condicionado automotivo com gás ecológico.',
+      benefits: ['Carga de gás refrigerante', 'Limpeza do sistema', 'Troca de filtros', 'Reparo de compressores'],
+      target: 'Sistemas de climatização',
+      price: 'A partir de R$ 150'
+    },
+    {
+      id: 5,
+      title: 'Freios',
+      description: 'Manutenção preventiva e corretiva do sistema de freios para sua segurança nas estradas.',
+      benefits: ['Troca de pastilhas e lonas', 'Sangria do sistema', 'Reparo de cilindros', 'Regulagem completa'],
+      target: 'Manutenção de segurança essencial',
+      price: 'A partir de R$ 120'
+    },
+    {
+      id: 6,
+      title: 'Suspensão',
+      description: 'Serviços completos de suspensão para conforto e estabilidade do seu veículo.',
+      benefits: ['Amortecedores', 'Molas e barras', 'Buchas e pivôs', 'Alinhamento e balanceamento'],
+      target: 'Conforto e dirigibilidade',
+      price: 'Sob consulta'
+    },
+    {
+      id: 7,
+      title: 'Escapamento',
+      description: 'Sistema completo de escapamento para redução de ruídos e emissões.',
+      benefits: ['Catalisadores', 'Silenciosos', 'Tubulações', 'Sistemas anti-poluição'],
+      target: 'Controle de emissões e ruído',
+      price: 'Variável conforme sistema'
+    },
+    {
+      id: 8,
+      title: 'Arrefecimento',
+      description: 'Manutenção do sistema de arrefecimento para evitar superaquecimento do motor.',
+      benefits: ['Radiadores', 'Bombas d\'água', 'Termostatos', 'Mangueiras e abraçadeiras'],
+      target: 'Prevenção de superaquecimento',
+      price: 'A partir de R$ 90'
     }
   ],
   
