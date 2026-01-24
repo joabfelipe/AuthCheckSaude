@@ -126,14 +126,23 @@ export const mockData = {
   ],
   
   about: {
-    mission: 'Proporcionar serviços automotivos de excelência, mantendo a "saúde" dos veículos com tecnologia, qualidade e atendimento diferenciado.',
+    mission: 'Empresa dinâmica e sintonizada com o futuro, multiplicamos a importância da manutenção preventiva e sustentabilidade, oferecendo serviços técnicos seguindo normas da ABNT.',
     values: [
-      'Compromisso com a qualidade técnica e satisfação do cliente',
-      'Transparência em diagnósticos, orçamentos e prazos', 
-      'Investimento constante em equipamentos e capacitação',
-      'Garantia e responsabilidade em todos os serviços realizados'
+      'Tradição de mais de 50 anos em reparação automotiva',
+      'Profissionais constantemente treinados e certificados',
+      'Parcerias com SENAI, SEBRAE, universidades e fabricantes',
+      'Compromisso com sustentabilidade e meio ambiente',
+      'Centro de treinamento e biblioteca técnica própria',
+      'Certificações CETESB, ASE e fabricantes automotivos'
     ],
-    description: 'A Auto Check Saúde atua há mais de 25 anos no mercado automotivo, especializando-se em serviços de usinagem, manutenção preventiva e reparos de motores. Nossa equipe técnica altamente qualificada, aliada a equipamentos modernos, garante soluções eficientes e duradouras para manter a "saúde" do seu veículo sempre em dia.'
+    description: 'A Auto Check Saúde tem uma longa história de tradição no ramo da reparação automotiva. Fundada no final da década de 60, iniciou como uma oficina de auto elétrica e evoluiu para um centro automotivo completo. Pioneira em certificações ambientais da CETESB e ASE, sempre se dedicou ao aperfeiçoamento técnico e educação profissional. Hoje, em sede própria no Jardim da Saúde, mantém um centro de treinamento aberto aos profissionais do setor, biblioteca técnica e parcerias com as principais entidades do mercado automotivo.',
+    history: {
+      founding: 'Final da década de 60',
+      founder: 'Profissional com formação em eletricidade e eletrônica',
+      evolution: 'De oficina de auto elétrica para centro automotivo completo',
+      certifications: ['CETESB (década de 80)', 'ASE (pioneiro)', 'Diversos fabricantes'],
+      partnerships: ['SENAI', 'SEBRAE', 'PUC', 'Sindirepa', 'Universidade do Mecânico']
+    }
   },
   
   blogPosts: [
