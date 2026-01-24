@@ -148,25 +148,44 @@ export const mockData = {
   blogPosts: [
     {
       id: 1,
-      title: 'A Importância da Manutenção Preventiva',
-      excerpt: 'Descubra como a manutenção regular pode evitar grandes reparos e manter seu veículo sempre funcionando perfeitamente.',
+      title: 'Sistema de Arrefecimento: Como Evitar Superaquecimento',
+      excerpt: 'Para evitar o superaquecimento do motor, verifique e complete o nível do líquido de arrefecimento regularmente. Aprenda os sinais de alerta.',
       readTime: '5 min',
       category: 'Manutenção'
     },
     {
       id: 2,
-      title: 'Sinais de que Seu Motor Precisa de Atenção',
-      excerpt: 'Aprenda a identificar os primeiros sintomas de problemas no motor e quando procurar ajuda especializada.',
+      title: 'Injeção Eletrônica: Diagnóstico e Manutenção',
+      excerpt: 'Entenda como funciona o sistema de injeção eletrônica e quando procurar um diagnóstico especializado para seu veículo.',
       readTime: '7 min',
       category: 'Diagnóstico'
     },
     {
       id: 3,
-      title: 'Usinagem Automotiva: Quando é Necessária?',
-      excerpt: 'Entenda os processos de usinagem e quando eles são recomendados para seu veículo.',
+      title: 'Sistema Elétrico Automotivo: Nossa Especialidade',
+      excerpt: 'Conheça nossa tradição de mais de 50 anos em sistema elétrico automotivo e os principais problemas que solucionamos.',
       readTime: '6 min',
-      category: 'Usinagem'
+      category: 'Especialidade'
     }
+  ],
+  
+  parts: [
+    'Componentes e Peças Elétricas',
+    'Filtros (usos diversos)',
+    'Velas e Cabos de Velas',
+    'Termo Válvulas e Termo Interruptores',
+    'Óleos Lubrificantes (usos diversos)',
+    'Fluídos Refrigerantes',
+    'Rastreadores (instalação)',
+    'Escapamento e Acessórios',
+    'Pneus (multimarcas)',
+    'Baterias',
+    'Alarmes (instalação)',
+    'Travas e Vidros Elétricos (instalação e manutenção)',
+    'Som (instalação)',
+    'Protetores de Carter',
+    'Palhetas do Limpador',
+    'Extintores'
   ],
   
   testimonials: [
