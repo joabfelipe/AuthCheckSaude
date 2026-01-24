@@ -19,24 +19,24 @@ export const mockData = {
   
   benefits: [
     {
-      title: 'Diagnóstico Preciso e Preventivo',
-      description: 'Identificamos problemas antes que se tornem grandes reparos, utilizando equipamentos modernos e experiência técnica.',
-      icon: 'Search'
+      title: 'Tradição e Experiência',
+      description: 'Fundada ainda na década de 60, acumulamos mais de 5 décadas de experiência em reparação automotiva com especialidade em sistema elétrico.',
+      icon: 'Award'
     },
     {
-      title: 'Atendimento Técnico Especializado',
-      description: 'Nossa equipe qualificada oferece soluções personalizadas para cada tipo de veículo e necessidade.',
-      icon: 'Users'
-    },
-    {
-      title: 'Serviços de Alta Qualidade',
-      description: 'Usinagem de precisão, peças certificadas e equipamentos de última geração para resultados superiores.',
+      title: 'Certificações e Qualidade',
+      description: 'Certificados pela CETESB, ASE e diversos fabricantes. Seguimos rigorosamente as normas da ABNT em todos os procedimentos.',
       icon: 'CheckCircle'
     },
     {
-      title: 'Agilidade e Confiabilidade',
-      description: 'Processos otimizados, prazos cumpridos e garantia em todos os serviços realizados.',
-      icon: 'Clock'
+      title: 'Profissionais Capacitados',
+      description: 'Equipe constantemente treinada e atualizada através de cursos técnicos e parcerias com SENAI, SEBRAE, universidades e fabricantes.',
+      icon: 'Users'
+    },
+    {
+      title: 'Centro de Treinamento',
+      description: 'Sede própria com sala de recepção da TV Oficina Brasil e biblioteca técnica para constante atualização profissional.',
+      icon: 'BookOpen'
     }
   ],
   
