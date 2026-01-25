@@ -62,18 +62,18 @@ const Header = () => {
             </div>
           </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          {navigation.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => scrollToSection(item.href)}
-              className="nav-link hover:text-primary-600 transition-colors px-4 py-2 rounded-lg"
-            >
-              {item.name}
-            </button>
-          ))}
-        </nav>
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className="text-text-secondary hover:text-text-primary transition-colors font-medium"
+              >
+                {item.name}
+              </button>
+            ))}
+          </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-3">
