@@ -48,22 +48,19 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-        {/* Logo */}
-        <div className="flex items-center">
-          <button 
-            onClick={() => scrollToSection('#inicio')} 
-            className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
-          >
-            <img 
-              src="https://customer-assets.emergentagent.com/job_health-checkup-4/artifacts/bhmlr1za_images.jfif" 
-              alt="Auto Check Saúde"
-              className="w-10 h-14 object-contain"
-            />
-            <span className="font-bold text-lg text-text-primary hidden sm:block">
-              {mockData.company.name}
-            </span>
-          </button>
-        </div>
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_health-checkup-4/artifacts/bhmlr1za_images.jfif" 
+                alt="Auto Check Saúde"
+                className="w-8 h-12 object-contain"
+              />
+              <span className="font-bold text-lg text-text-primary hidden sm:block">
+                {mockData.company.name}
+              </span>
+            </div>
+          </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
