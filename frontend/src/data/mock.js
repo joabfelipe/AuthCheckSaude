@@ -46,64 +46,56 @@ export const mockData = {
       title: 'Injeção Eletrônica',
       description: 'Diagnóstico e reparo completo do sistema de injeção eletrônica com equipamentos de última geração e profissionais especializados.',
       benefits: ['Diagnóstico eletrônico avançado', 'Limpeza de bicos injetores', 'Regulagem e calibragem', 'Teste de componentes'],
-      target: 'Veículos com falhas no sistema de alimentação',
-      price: 'Sob orçamento'
+      target: 'Veículos com falhas no sistema de alimentação'
     },
     {
       id: 2,
       title: 'Motor',
       description: 'Serviços completos de motor incluindo retífica, usinagem, montagem e todos os reparos necessários.',
       benefits: ['Retífica completa', 'Usinagem de precisão', 'Montagem e regulagem', 'Teste de compressão'],
-      target: 'Motores com desgaste ou problemas internos',
-      price: 'Orçamento personalizado'
+      target: 'Motores com desgaste ou problemas internos'
     },
     {
       id: 3,
       title: 'Sistema Elétrico',
       description: 'Nossa especialidade original. Diagnóstico e reparo completo do sistema elétrico automotivo.',
       benefits: ['Diagnóstico elétrico completo', 'Reparo de alternadores', 'Sistemas de ignição', 'Instalação de acessórios'],
-      target: 'Problemas elétricos em geral',
-      price: 'A partir de R$ 80'
+      target: 'Problemas elétricos em geral'
     },
     {
       id: 4,
       title: 'Ar-condicionado',
       description: 'Manutenção e reparo completo do sistema de ar-condicionado automotivo com gás ecológico.',
       benefits: ['Carga de gás refrigerante', 'Limpeza do sistema', 'Troca de filtros', 'Reparo de compressores'],
-      target: 'Sistemas de climatização',
-      price: 'A partir de R$ 150'
+      target: 'Sistemas de climatização'
     },
     {
       id: 5,
       title: 'Freios',
       description: 'Manutenção preventiva e corretiva do sistema de freios para sua segurança nas estradas.',
       benefits: ['Troca de pastilhas e lonas', 'Sangria do sistema', 'Reparo de cilindros', 'Regulagem completa'],
-      target: 'Manutenção de segurança essencial',
-      price: 'A partir de R$ 120'
+      target: 'Manutenção de segurança essencial'
     },
     {
       id: 6,
       title: 'Suspensão',
       description: 'Serviços completos de suspensão para conforto e estabilidade do seu veículo.',
       benefits: ['Amortecedores', 'Molas e barras', 'Buchas e pivôs', 'Alinhamento e balanceamento'],
-      target: 'Conforto e dirigibilidade',
-      price: 'Sob consulta'
+      target: 'Conforto e dirigibilidade'
     },
     {
       id: 7,
       title: 'Escapamento',
       description: 'Sistema completo de escapamento para redução de ruídos e emissões.',
       benefits: ['Catalisadores', 'Silenciosos', 'Tubulações', 'Sistemas anti-poluição'],
-      target: 'Controle de emissões e ruído',
-      price: 'Variável conforme sistema'
+      target: 'Controle de emissões e ruído'
     },
     {
       id: 8,
       title: 'Arrefecimento',
       description: 'Manutenção do sistema de arrefecimento para evitar superaquecimento do motor.',
       benefits: ['Radiadores', 'Bombas d\'água', 'Termostatos', 'Mangueiras e abraçadeiras'],
-      target: 'Prevenção de superaquecimento',
-      price: 'A partir de R$ 90'
+      target: 'Prevenção de superaquecimento'
     }
   ],
   
