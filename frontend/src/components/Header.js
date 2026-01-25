@@ -88,9 +88,10 @@ const Header = () => {
           </a>
           <button
             onClick={handleWhatsAppContact}
-            className="btn-primary"
+            className="btn-primary flex items-center space-x-2"
           >
-            Agendar Agora
+            <MessageCircle size={16} />
+            <span>Fale Conosco</span>
           </button>
         </div>
 
