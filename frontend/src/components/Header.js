@@ -46,7 +46,8 @@ const Header = () => {
         ? 'bg-white shadow-lg py-2' 
         : 'bg-white/95 backdrop-blur-md py-4'
     }`}>
-      <div className="flex items-center justify-between w-full px-4 max-w-7xl mx-auto">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center">
           <button 
