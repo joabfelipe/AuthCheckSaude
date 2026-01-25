@@ -12,7 +12,9 @@ const Home = () => {
     Search,
     Users,
     CheckCircle,
-    Clock
+    Clock,
+    Award,
+    BookOpen
   };
 
   return (
