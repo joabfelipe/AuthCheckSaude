@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, MessageCircle, Wrench } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 import { mockData, generateWhatsAppLink } from '../data/mock';
 
 const Footer = () => {
