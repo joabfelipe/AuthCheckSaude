@@ -75,23 +75,23 @@ const Header = () => {
             ))}
           </nav>
 
-        {/* Desktop CTA */}
-        <div className="hidden md:flex items-center space-x-3">
-          <a
-            href={`tel:${mockData.company.phone}`}
-            className="flex items-center space-x-1 text-text-secondary hover:text-text-primary transition-colors"
-          >
-            <Phone size={16} />
-            <span className="text-sm font-medium">{mockData.company.phone}</span>
-          </a>
-          <button
-            onClick={handleWhatsAppContact}
-            className="btn-primary flex items-center space-x-2"
-          >
-            <MessageCircle size={16} />
-            <span>Fale Conosco</span>
-          </button>
-        </div>
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <a
+              href={`tel:${mockData.company.phone}`}
+              className="flex items-center space-x-2 text-text-secondary hover:text-text-primary transition-colors"
+            >
+              <Phone size={16} />
+              <span className="text-sm font-medium">{mockData.company.phone}</span>
+            </a>
+            <button
+              onClick={handleWhatsAppContact}
+              className="btn-primary flex items-center space-x-2"
+            >
+              <MessageCircle size={18} />
+              <span>Falar no WhatsApp</span>
+            </button>
+          </div>
 
         {/* Mobile menu button */}
         <div className="md:hidden">
