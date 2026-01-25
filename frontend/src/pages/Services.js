@@ -75,9 +75,9 @@ const Services = () => {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <div>
-                        <p className="body-small text-text-muted mb-1">A partir de</p>
-                        <p className="heading-3 text-accent-text">{service.price}</p>
+                      <div className="text-center">
+                        <p className="body-small text-text-muted mb-1">Solicite seu orçamento</p>
+                        <p className="body-medium font-semibold text-accent-text">Via WhatsApp</p>
                       </div>
                       <button
                         onClick={() => handleSchedule(service.title)}
