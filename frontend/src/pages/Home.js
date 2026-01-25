@@ -279,25 +279,108 @@ const Home = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-bg-section">
-        <div className="container">
-          <div className="text-center">
+      <section id="contato" className="py-20 bg-bg-section">
+        <div className="container mx-auto px-6">
+          {/* CTA Principal */}
+          <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Pronto para Cuidar do Seu Veículo?</h2>
             <p className="body-large text-text-secondary mb-8 max-w-2xl mx-auto">
-              Não espere problemas aparecerem. Agende agora seu check-up preventivo e 
-              mantenha seu veículo sempre em perfeitas condições.
+              Entre em contato conosco e agende seu atendimento. Estamos na região da Saúde, 
+              São Paulo, há mais de 50 anos cuidando de veículos com qualidade e confiança.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
                 onClick={() => handleSchedule('check-up preventivo')}
-                className="btn-primary"
+                className="btn-primary flex items-center space-x-2"
               >
                 <MessageCircle size={18} />
-                Agendar Check-up Agora
+                <span>Agendar Check-up Agora</span>
               </button>
-              <a href="/contato" className="btn-secondary">
-                Solicitar Orçamento
-              </a>
+              <button 
+                onClick={() => handleSchedule('orçamento personalizado')}
+                className="btn-secondary flex items-center space-x-2"
+              >
+                <span>Solicitar Orçamento</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Informações de Contato e Mapa */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Informações */}
+            <div>
+              <h3 className="heading-3 mb-8 text-center lg:text-left">Informações de Contato</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-accent-wash rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin size={20} className="text-accent-text" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-2">Endereço</h4>
+                    <p className="body-medium text-text-secondary">
+                      {mockData.company.address}
+                    </p>
+                    <p className="body-small text-text-muted mt-1">
+                      Jardim da Saúde, próximo ao Hospital do Servidor Público
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-accent-wash rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MessageCircle size={20} className="text-accent-text" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-2">WhatsApp</h4>
+                    <button
+                      onClick={() => handleSchedule('contato direto')}
+                      className="body-medium text-accent-text hover:underline"
+                    >
+                      {mockData.company.phone}
+                    </button>
+                    <p className="body-small text-text-muted mt-1">
+                      Clique para conversar diretamente
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-accent-wash rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock size={20} className="text-accent-text" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-2">Horário</h4>
+                    <p className="body-medium text-text-secondary">
+                      {mockData.company.workingHours}
+                    </p>
+                    <p className="body-small text-text-muted mt-1">
+                      Domingo: Fechado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Google Maps Embed */}
+            <div>
+              <h3 className="heading-3 mb-8 text-center">Nossa Localização</h3>
+              <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
+                <div className="text-center">
+                  <MapPin size={48} className="text-gray-400 mx-auto mb-4" />
+                  <p className="text-gray-500 font-medium">Mapa do Google</p>
+                  <p className="text-gray-400 text-sm mt-2">
+                    Av. do Cursino, 2012<br />
+                    Jardim da Saúde, São Paulo
+                  </p>
+                  <button
+                    onClick={() => window.open(`https://maps.google.com/?q=${encodeURIComponent(mockData.company.address)}`, '_blank')}
+                    className="btn-primary mt-4 text-sm px-6 py-2"
+                  >
+                    Abrir no Google Maps
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
