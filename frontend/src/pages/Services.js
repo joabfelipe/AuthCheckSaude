@@ -153,7 +153,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Peças e Componentes Section */}
+      {/* CTA Section */}
       <section className="py-20 bg-bg-section">
         <div className="container">
           <div className="text-center mb-12">
@@ -184,7 +184,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Final */}
       <section className="py-20">
         <div className="container">
           <div className="text-center">
