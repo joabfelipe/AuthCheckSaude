@@ -121,18 +121,18 @@ const Footer = () => {
               © {currentYear} {mockData.company.name}. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6">
-              <Link
-                to="/"
-                className="body-small hover:text-accent-text transition-colors"
+              <button
+                onClick={() => alert('Política de Privacidade - Em desenvolvimento')}
+                className="body-small hover:text-accent-text transition-colors cursor-pointer"
               >
                 Política de Privacidade
-              </Link>
-              <Link
-                to="/"
-                className="body-small hover:text-accent-text transition-colors"
+              </button>
+              <button
+                onClick={() => alert('Termos de Uso - Em desenvolvimento')}
+                className="body-small hover:text-accent-text transition-colors cursor-pointer"
               >
                 Termos de Uso
-              </Link>
+              </button>
             </div>
           </div>
         </div>
