@@ -1,35 +1,35 @@
 /* Auto Check Saúde - Sistema de Design Automotivo */
 
-/* Foundation Colors */
+/* Foundation Colors - Auto Check Saúde Brand */
 :root {
   /* Backgrounds - Clean & Minimal */
   --bg-page: #FFFFFF;
   --bg-card: #FFFFFF;
-  --bg-section: rgba(0, 0, 0, 0.02);
+  --bg-section: rgba(255, 215, 0, 0.05);  /* Light yellow tint */
   
   /* Text - Professional Hierarchy */
-  --text-primary: rgb(0, 55, 32);        /* Main headings #003720 */
-  --text-body: rgb(14, 15, 12);          /* Body text #0e0f0c */
-  --text-secondary: rgb(131, 146, 140);  /* Supporting text #83928c */
-  --text-muted: rgb(175, 183, 180);      /* Captions, timestamps #afb7b4 */
+  --text-primary: #000000;               /* Pure black for headings */
+  --text-body: #1a1a1a;                  /* Near black for body text */
+  --text-secondary: #4a4a4a;             /* Dark gray for supporting text */
+  --text-muted: #808080;                 /* Medium gray for captions */
   
   /* Borders - Subtle Separation */
   --border-light: rgba(0, 0, 0, 0.1);
   --border-medium: rgba(0, 0, 0, 0.2);
   --border-strong: rgba(0, 0, 0, 0.3);
   
-  /* BRAND COLORS - Green Accent System */
-  --accent-primary: #8FEC78;             /* Main green accent */
-  --accent-strong: #81DD67;              /* Stronger green accent */
-  --accent-text: rgb(13, 121, 22);       /* Green text color */
-  --accent-wash: rgba(148, 242, 127, 0.1); /* Light accent background */
+  /* BRAND COLORS - Yellow & Black System */
+  --accent-primary: #FFD700;             /* Bright yellow from logo */
+  --accent-strong: #FFC107;              /* Darker yellow accent */
+  --accent-text: #000000;                /* Black text on yellow */
+  --accent-wash: rgba(255, 215, 0, 0.1); /* Light yellow background */
   
-  /* Hero Gradients - Use ONLY for major sections */
-  --gradient-hero: radial-gradient(at 53% 78%, hsla(60,100%,50%,0.3) 0px, transparent 50%), 
-                   radial-gradient(at 71% 91%, hsla(108,100%,50%,0.3) 0px, transparent 50%), 
-                   radial-gradient(at 31% 91%, hsla(30,100%,50%,0.17) 0px, transparent 50%);
+  /* Hero Gradients - Yellow themed */
+  --gradient-hero: radial-gradient(at 53% 78%, hsla(51,100%,50%,0.3) 0px, transparent 50%), 
+                   radial-gradient(at 71% 91%, hsla(45,100%,60%,0.2) 0px, transparent 50%), 
+                   radial-gradient(at 31% 91%, hsla(60,100%,70%,0.15) 0px, transparent 50%);
   
-  /* Button Gradients - For CTAs only */
+  /* Button Gradients - Yellow CTAs */
   --gradient-button: linear-gradient(to bottom right, var(--accent-primary), var(--accent-strong));
 }
 
