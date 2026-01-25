@@ -104,40 +104,40 @@ const Header = () => {
           </div>
         </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden mt-4 px-4 pb-4 border-t border-border-light bg-white">
-          <nav className="flex flex-col space-y-2 mt-4">
-            {navigation.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="nav-link text-left hover:text-primary-600 transition-colors px-4 py-2 rounded-lg"
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden border-t border-border-light bg-white">
+            <nav className="py-4 space-y-2">
+              {navigation.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-accent-wash transition-colors font-medium"
+                >
+                  {item.name}
+                </button>
+              ))}
+            </nav>
+            
+            <div className="px-4 py-4 border-t border-border-light space-y-3">
+              <a
+                href={`tel:${mockData.company.phone}`}
+                className="flex items-center space-x-2 text-text-secondary py-2"
               >
-                {item.name}
+                <Phone size={16} />
+                <span className="text-sm font-medium">{mockData.company.phone}</span>
+              </a>
+              <button
+                onClick={handleWhatsAppContact}
+                className="btn-primary w-full flex items-center justify-center space-x-2"
+              >
+                <MessageCircle size={18} />
+                <span>Falar no WhatsApp</span>
               </button>
-            ))}
-          </nav>
-          
-          <div className="mt-4 pt-4 border-t border-border-light space-y-3">
-            <a
-              href={`tel:${mockData.company.phone}`}
-              className="flex items-center space-x-2 text-text-secondary"
-            >
-              <Phone size={16} />
-              <span className="text-sm font-medium">{mockData.company.phone}</span>
-            </a>
-            <button
-              onClick={handleWhatsAppContact}
-              className="btn-primary w-full flex items-center justify-center space-x-2"
-            >
-              <MessageCircle size={16} />
-              <span>Fale Conosco</span>
-            </button>
+            </div>
           </div>
-        </div>
-      )}
-    </header>
+        )}
+      </div>
   );
 };
 
