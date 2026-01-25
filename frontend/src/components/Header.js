@@ -46,10 +46,13 @@ const Header = () => {
         ? 'bg-white shadow-lg py-2' 
         : 'bg-white/95 backdrop-blur-md py-4'
     }`}>
-      <div className="flex items-center justify-between w-full px-4">
+      <div className="flex items-center justify-between w-full px-4 max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center space-x-3">
+          <button 
+            onClick={() => scrollToSection('#inicio')} 
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+          >
             <img 
               src="https://customer-assets.emergentagent.com/job_health-checkup-4/artifacts/bhmlr1za_images.jfif" 
               alt="Auto Check Saúde"
@@ -58,21 +61,19 @@ const Header = () => {
             <span className="font-bold text-lg text-text-primary hidden sm:block">
               {mockData.company.name}
             </span>
-          </Link>
+          </button>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
           {navigation.map((item) => (
-            <Link
+            <button
               key={item.name}
-              to={item.href}
-              className={`nav-link ${
-                item.current ? 'active' : ''
-              }`}
+              onClick={() => scrollToSection(item.href)}
+              className="nav-link hover:text-primary-600 transition-colors px-4 py-2 rounded-lg"
             >
               {item.name}
-            </Link>
+            </button>
           ))}
         </nav>
 
