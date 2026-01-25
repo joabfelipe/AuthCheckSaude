@@ -122,7 +122,7 @@ main {
 /* Button System */
 .btn-primary {
   background: var(--gradient-button);
-  color: white;
+  color: #000000; /* Black text on yellow background */
   border: none;
   border-radius: 9999px;
   padding: 14px 24px;
@@ -143,7 +143,7 @@ main {
 
 .btn-primary:hover {
   transform: scale(1.02);
-  box-shadow: 0px 4px 8px rgba(148, 242, 127, 0.3);
+  box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.3);
 }
 
 .btn-primary:active {
