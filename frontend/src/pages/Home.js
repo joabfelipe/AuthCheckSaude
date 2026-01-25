@@ -174,8 +174,8 @@ const Home = () => {
       </section>
 
       {/* Como Funciona */}
-      <section className="py-20 bg-bg-section">
-        <div className="container">
+      <section id="como-funciona" className="py-20 bg-bg-section">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Como Funciona</h2>
             <p className="body-large text-text-secondary max-w-2xl mx-auto">
@@ -183,16 +183,36 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {mockData.process.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent-primary to-accent-strong rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-xl font-bold">{step.step}</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {mockData.process.slice(0, 3).map((step, index) => (
+              <div key={index} className="text-center relative">
+                {/* Linha conectora - apenas para desktop */}
+                {index < 2 && (
+                  <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-accent-primary/30 z-0"></div>
+                )}
+                
+                {/* Número do passo */}
+                <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-accent-primary to-accent-strong rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-black text-2xl font-bold">{step.step}</span>
                 </div>
-                <h3 className="heading-3 mb-4">{step.title}</h3>
-                <p className="body-medium text-text-secondary">{step.description}</p>
+                
+                <div className="product-card">
+                  <h3 className="heading-3 mb-4 text-accent-text">{step.title}</h3>
+                  <p className="body-medium text-text-secondary">{step.description}</p>
+                </div>
               </div>
             ))}
+          </div>
+          
+          {/* CTA no final */}
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleSchedule('processo de atendimento')}
+              className="btn-primary flex items-center space-x-2 mx-auto"
+            >
+              <MessageCircle size={18} />
+              <span>Falar no WhatsApp</span>
+            </button>
           </div>
         </div>
       </section>
