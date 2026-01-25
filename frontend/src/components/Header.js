@@ -26,11 +26,13 @@ const Header = () => {
       <div className="flex items-center justify-between w-full px-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-accent-primary to-accent-strong rounded-lg flex items-center justify-center">
-              <Wrench size={18} className="text-white" />
-            </div>
-            <span className="font-semibold text-lg text-text-primary">
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_health-checkup-4/artifacts/bhmlr1za_images.jfif" 
+              alt="Auto Check Saúde"
+              className="w-10 h-14 object-contain"
+            />
+            <span className="font-bold text-lg text-text-primary hidden sm:block">
               {mockData.company.name}
             </span>
           </Link>
