@@ -17,11 +17,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Empresa */}
           <div className="col-span-1 lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-accent-primary to-accent-strong rounded-lg flex items-center justify-center">
-                <Wrench size={20} className="text-white" />
-              </div>
-              <span className="font-semibold text-xl text-text-primary">
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_health-checkup-4/artifacts/bhmlr1za_images.jfif" 
+                alt="Auto Check Saúde"
+                className="w-10 h-14 object-contain"
+              />
+              <span className="font-bold text-xl text-text-primary">
                 {mockData.company.name}
               </span>
             </div>
