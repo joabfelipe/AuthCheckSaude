@@ -108,19 +108,16 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden mt-4 px-4 pb-4 border-t border-border-light">
+        <div className="md:hidden mt-4 px-4 pb-4 border-t border-border-light bg-white">
           <nav className="flex flex-col space-y-2 mt-4">
             {navigation.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                to={item.href}
-                className={`nav-link text-left ${
-                  item.current ? 'active' : ''
-                }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => scrollToSection(item.href)}
+                className="nav-link text-left hover:text-primary-600 transition-colors px-4 py-2 rounded-lg"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </nav>
           
@@ -134,9 +131,10 @@ const Header = () => {
             </a>
             <button
               onClick={handleWhatsAppContact}
-              className="btn-primary w-full"
+              className="btn-primary w-full flex items-center justify-center space-x-2"
             >
-              Agendar Agora
+              <MessageCircle size={16} />
+              <span>Fale Conosco</span>
             </button>
           </div>
         </div>
