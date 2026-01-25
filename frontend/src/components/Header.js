@@ -1,28 +1,51 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Wrench } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 import { mockData, generateWhatsAppLink } from '../data/mock';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navigation = [
-    { name: 'Início', href: '/', current: location.pathname === '/' },
-    { name: 'Sobre', href: '/sobre', current: location.pathname === '/sobre' },
-    { name: 'Serviços', href: '/servicos', current: location.pathname === '/servicos' },
-    { name: 'Como Funciona', href: '/como-funciona', current: location.pathname === '/como-funciona' },
-    { name: 'Contato', href: '/contato', current: location.pathname === '/contato' },
-    { name: 'Blog', href: '/blog', current: location.pathname === '/blog' },
+    { name: 'Início', href: '#inicio' },
+    { name: 'Sobre', href: '#sobre' },
+    { name: 'Serviços', href: '#servicos' },
+    { name: 'Como Funciona', href: '#como-funciona' },
+    { name: 'Depoimentos', href: '#depoimentos' },
+    { name: 'Contato', href: '#contato' }
   ];
 
   const handleWhatsAppContact = () => {
-    const whatsappLink = generateWhatsAppLink('check-up automotivo', 'Olá! Gostaria de agendar um check-up para meu veículo. Podem me ajudar?');
+    const whatsappLink = generateWhatsAppLink('atendimento', 'Olá! Vi o site da Auto Check Saúde e gostaria de falar sobre os serviços para meu veículo.');
     window.open(whatsappLink, '_blank');
   };
 
+  const scrollToSection = (href) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="nav-header">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-white shadow-lg py-2' 
+        : 'bg-white/95 backdrop-blur-md py-4'
+    }`}>
       <div className="flex items-center justify-between w-full px-4">
         {/* Logo */}
         <div className="flex items-center">
