@@ -101,13 +101,12 @@ const Home = () => {
                   ))}
                 </div>
                 <div className="flex justify-between items-center mt-4">
-                  <span className="font-semibold text-accent-text">{service.price}</span>
                   <button
                     onClick={() => handleSchedule(service.title.toLowerCase())}
-                    className="btn-secondary text-sm px-4 py-2"
+                    className="btn-primary"
                   >
-                    Agendar
-                    <ArrowRight size={14} />
+                    <MessageCircle size={16} />
+                    Solicitar Orçamento
                   </button>
                 </div>
               </div>
