@@ -95,13 +95,13 @@ const Home = () => {
       </section>
 
       {/* Por que Escolher Section */}
-      <section className="py-20 bg-bg-section">
-        <div className="container">
+      <section id="sobre" className="py-20 bg-bg-section">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Por que Escolher a Auto Check Saúde?</h2>
             <p className="body-large text-text-secondary max-w-2xl mx-auto">
-              Mais de duas décadas de experiência cuidando da saúde do seu veículo com 
-              excelência técnica e atendimento diferenciado.
+              Há mais de 50 anos de experiência cuidando da saúde do seu veículo com 
+              excelência técnica e atendimento diferenciado na região de São Paulo.
             </p>
           </div>
           
@@ -125,18 +125,18 @@ const Home = () => {
       </section>
 
       {/* Principais Serviços */}
-      <section className="py-20">
-        <div className="container">
+      <section id="servicos" className="py-20">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Nossos Principais Serviços</h2>
             <p className="body-large text-text-secondary max-w-2xl mx-auto">
               Soluções completas para manter seu veículo sempre em perfeito funcionamento, 
-              desde manutenção preventiva até reparos complexos.
+              desde manutenção preventiva até reparos especializados.
             </p>
           </div>
           
           <div className="ai-grid">
-            {mockData.services.slice(0, 4).map((service) => (
+            {mockData.services.slice(0, 6).map((service) => (
               <div key={service.id} className="product-card card-hover-lift">
                 <h3 className="product-card-title mb-3">{service.title}</h3>
                 <p className="body-small text-text-secondary mb-4">{service.description}</p>
@@ -148,13 +148,13 @@ const Home = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex justify-center items-center mt-4">
                   <button
                     onClick={() => handleSchedule(service.title.toLowerCase())}
-                    className="btn-primary"
+                    className="btn-primary w-full flex items-center justify-center space-x-2"
                   >
                     <MessageCircle size={16} />
-                    Solicitar Orçamento
+                    <span>Solicitar Orçamento</span>
                   </button>
                 </div>
               </div>
@@ -162,10 +162,13 @@ const Home = () => {
           </div>
           
           <div className="text-center mt-12">
-            <a href="/servicos" className="btn-primary">
-              Ver Todos os Serviços
+            <button 
+              onClick={() => document.getElementById('contato').scrollIntoView({ behavior: 'smooth' })}
+              className="btn-secondary flex items-center space-x-2 mx-auto"
+            >
+              <span>Ver Todos os Serviços</span>
               <ArrowRight size={18} />
-            </a>
+            </button>
           </div>
         </div>
       </section>
