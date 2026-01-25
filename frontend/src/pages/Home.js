@@ -4,7 +4,7 @@ import { mockData, generateWhatsAppLink } from '../data/mock';
 
 const Home = () => {
   const handleSchedule = (service = '') => {
-    const whatsappLink = generateWhatsAppLink(service, `Olá! Gostaria de agendar ${service ? `um ${service}` : 'um serviço'} para meu veículo.`);
+    const whatsappLink = generateWhatsAppLink(service, `Olá! Vi o site da Auto Check Saúde e gostaria de ${service ? `solicitar orçamento para ${service}` : 'agendar um check-up para meu veículo'}.`);
     window.open(whatsappLink, '_blank');
   };
 
@@ -14,34 +14,82 @@ const Home = () => {
     CheckCircle,
     Clock,
     Award,
-    BookOpen
+    BookOpen,
+    Shield,
+    MapPin
   };
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            {mockData.hero.title}
-          </h1>
-          <p className="hero-subtitle">
-            {mockData.hero.subtitle}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button 
-              onClick={() => handleSchedule('check-up automotivo')}
-              className="btn-primary"
-            >
-              <MessageCircle size={18} />
-              {mockData.hero.primaryCTA}
-            </button>
-            <button 
-              onClick={() => handleSchedule('consulta')}
-              className="btn-secondary"
-            >
-              {mockData.hero.secondaryCTA}
-            </button>
+      <section id="inicio" className="hero-section">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            {/* Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="hero-title mb-6">
+                Segurança & Qualidade em Reparação Automotiva em São Paulo
+              </h1>
+              <p className="hero-subtitle mb-8">
+                Há mais de 50 anos cuidando do seu veículo com excelência técnica. 
+                Seguimos normas da ABNT com profissionais constantemente treinados e capacitados.
+              </p>
+              
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                <button 
+                  onClick={() => handleSchedule('check-up preventivo')}
+                  className="btn-primary flex items-center justify-center space-x-2"
+                >
+                  <MessageCircle size={18} />
+                  <span>Agendar Check-up</span>
+                </button>
+                <button 
+                  onClick={() => handleSchedule('orçamento')}
+                  className="btn-secondary flex items-center justify-center space-x-2"
+                >
+                  <span>Solicitar Orçamento</span>
+                </button>
+              </div>
+
+              {/* Selos de Confiança */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start space-x-2">
+                  <Shield size={20} className="text-accent-primary" />
+                  <span className="body-small font-medium">Diagnóstico Transparente</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start space-x-2">
+                  <Users size={20} className="text-accent-primary" />
+                  <span className="body-small font-medium">Equipe Especializada</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start space-x-2">
+                  <CheckCircle size={20} className="text-accent-primary" />
+                  <span className="body-small font-medium">Garantia no Serviço</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-accent-primary/10 to-accent-strong/10 rounded-3xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-accent-primary to-accent-strong rounded-2xl flex items-center justify-center mx-auto mb-6">
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_health-checkup-4/artifacts/bhmlr1za_images.jfif" 
+                        alt="Auto Check Saúde Logo"
+                        className="w-16 h-20 object-contain"
+                      />
+                    </div>
+                    <h3 className="heading-3 text-accent-text mb-2">50+ Anos</h3>
+                    <p className="body-medium text-text-secondary">de Tradição em São Paulo</p>
+                  </div>
+                </div>
+                {/* Elementos decorativos */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-accent-primary/20 rounded-full"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent-strong/20 rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
