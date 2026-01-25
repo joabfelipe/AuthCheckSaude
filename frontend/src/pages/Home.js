@@ -218,28 +218,62 @@ const Home = () => {
       </section>
 
       {/* Depoimentos */}
-      <section className="py-20">
-        <div className="container">
+      <section id="depoimentos" className="py-20">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">O que Nossos Clientes Dizem</h2>
-            <p className="body-large text-text-secondary max-w-2xl mx-auto">
-              A satisfação dos nossos clientes é nosso maior objetivo. 
-              Veja alguns depoimentos de quem confia na Auto Check Saúde.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {mockData.testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="product-card">
-                <div className="stars mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="star" />
+            <div className="flex items-center justify-center space-x-4 mb-8">
+              <div className="flex items-center space-x-2">
+                <div className="flex space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={20} className="fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="body-medium mb-4 italic">"{testimonial.text}"</p>
-                <p className="font-semibold text-accent-text">- {testimonial.name}</p>
+                <span className="text-2xl font-bold text-accent-text">4,7</span>
+              </div>
+              <div className="text-text-secondary">
+                <span className="font-medium">142 avaliações</span> no Google
+              </div>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {mockData.testimonials.map((testimonial) => (
+              <div key={testimonial.id} className="product-card relative">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-accent-primary rounded-full flex items-center justify-center mr-3">
+                    <span className="text-black font-bold text-lg">
+                      {testimonial.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-text-primary">{testimonial.name}</p>
+                    <p className="text-xs text-text-muted">Google • 2025</p>
+                  </div>
+                </div>
+                
+                <div className="flex space-x-1 mb-3">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                
+                <p className="body-medium text-text-secondary italic">"{testimonial.text}"</p>
+                
+                {/* Badge Google */}
+                <div className="absolute top-4 right-4">
+                  <div className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">G</span>
+                  </div>
+                </div>
               </div>
             ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="body-small text-text-muted">
+              * Avaliações reais podem ser integradas ao Google Meu Negócio
+            </p>
           </div>
         </div>
       </section>
