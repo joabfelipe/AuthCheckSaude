@@ -118,7 +118,7 @@ export const mockData = {
   ],
   
   about: {
-    mission: 'Empresa dinâmica e sintonizada com o futuro, multiplicamos a importância da manutenção preventiva e sustentabilidade, oferecendo serviços técnicos seguindo normas da ABNT.',
+    mission: 'Há mais de 50 anos sendo uma empresa dinâmica e sintonizada com o futuro, multiplicamos a importância da manutenção preventiva e sustentabilidade, oferecendo serviços técnicos seguindo normas da ABNT.',
     values: [
       'Tradição de mais de 50 anos em reparação automotiva',
       'Profissionais constantemente treinados e certificados',
@@ -127,7 +127,7 @@ export const mockData = {
       'Centro de treinamento e biblioteca técnica própria',
       'Certificações CETESB, ASE e fabricantes automotivos'
     ],
-    description: 'A Auto Check Saúde tem uma longa história de tradição no ramo da reparação automotiva. Fundada no final da década de 60, iniciou como uma oficina de auto elétrica e evoluiu para um centro automotivo completo. Pioneira em certificações ambientais da CETESB e ASE, sempre se dedicou ao aperfeiçoamento técnico e educação profissional. Hoje, em sede própria no Jardim da Saúde, mantém um centro de treinamento aberto aos profissionais do setor, biblioteca técnica e parcerias com as principais entidades do mercado automotivo.',
+    description: 'A Auto Check Saúde tem uma longa história de tradição no ramo da reparação automotiva. Fundada no final da década de 60, iniciou como uma oficina de auto elétrica e evoluiu para um centro automotivo completo. Há mais de 50 anos no mercado, sempre se dedicou ao aperfeiçoamento técnico e educação profissional. Hoje, em sede própria no Jardim da Saúde, mantém um centro de treinamento aberto aos profissionais do setor.',
     history: {
       founding: 'Final da década de 60',
       founder: 'Profissional com formação em eletricidade e eletrônica',
