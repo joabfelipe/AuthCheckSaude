@@ -153,6 +153,37 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Peças e Componentes Section */}
+      <section className="py-20 bg-bg-section">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 mb-4">Peças e Componentes</h2>
+            <p className="body-large text-text-secondary max-w-2xl mx-auto">
+              Além dos serviços, trabalhamos com peças originais e de primeira linha 
+              para garantir a qualidade e durabilidade dos reparos.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+            {mockData.parts.map((part, index) => (
+              <div key={index} className="product-card text-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-accent-primary to-accent-strong rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle size={16} className="text-white" />
+                </div>
+                <p className="body-small font-medium">{part}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center">
+            <p className="body-medium text-text-secondary mb-6">
+              <strong>E muito mais!</strong> Trabalhamos com diversas marcas e temos 
+              acesso a uma ampla rede de fornecedores para encontrar a peça ideal para seu veículo.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container">
