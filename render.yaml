@@ -1,0 +1,29 @@
+services:
+  # Backend Service (Python/FastAPI)
+  - type: web
+    name: authcheck-backend
+    env: python
+    region: oregon
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGO_URL
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: CORS_ORIGINS
+        value: "*" # Ajuste conforme necessário para produção
+
+  # Frontend Service (React)
+  - type: static
+    name: authcheck-frontend
+    env: static
+    region: oregon
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    publishDir: build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
