@@ -481,7 +481,7 @@ function App() {
         </section>
 
         {/* Depoimentos */}
-        <section style={{ padding: '4rem 1rem', backgroundColor: '#fff' }}>
+        <section style={{ padding: '4rem 1rem', backgroundColor: '#f9f9f9' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#000' }}>
               O que Nossos Clientes Dizem
@@ -499,18 +499,18 @@ function App() {
             </div>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-              <div style={{ backgroundColor: '#f9f9f9', padding: '2rem', borderRadius: '15px', position: 'relative' }}>
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', position: 'relative', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
                   <div style={{ width: '50px', height: '50px', backgroundColor: '#FFD700', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem' }}>
                     <span style={{ color: '#000', fontWeight: 'bold' }}>EQ</span>
                   </div>
                   <div>
-                    <p style={{ fontWeight: 'bold', margin: 0, color: '#000' }}>Estanis Q.</p>
+                    <p style={{ fontWeight: 'bold', margin: 0, color: '#000' }}>Estanis Quevedo</p>
                     <p style={{ fontSize: '0.8rem', margin: 0, color: '#666' }}>Google • 2025</p>
                   </div>
                 </div>
                 <p style={{ fontStyle: 'italic', color: '#555' }}>
-                  "Renato e time são gente fina demais, super competentes e atenciosos."
+                  "Renato e time são gente fina demais, super competentes e atenciosos. Trabalho de qualidade com preços justos."
                 </p>
                 <div style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
                   <div style={{ width: '24px', height: '24px', backgroundColor: '#4285f4', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -519,18 +519,18 @@ function App() {
                 </div>
               </div>
               
-              <div style={{ backgroundColor: '#f9f9f9', padding: '2rem', borderRadius: '15px', position: 'relative' }}>
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', position: 'relative', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
                   <div style={{ width: '50px', height: '50px', backgroundColor: '#FFD700', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem' }}>
                     <span style={{ color: '#000', fontWeight: 'bold' }}>SM</span>
                   </div>
                   <div>
-                    <p style={{ fontWeight: 'bold', margin: 0, color: '#000' }}>Sergio M.</p>
+                    <p style={{ fontWeight: 'bold', margin: 0, color: '#000' }}>Sergio Marques</p>
                     <p style={{ fontSize: '0.8rem', margin: 0, color: '#666' }}>Google • 2025</p>
                   </div>
                 </div>
                 <p style={{ fontStyle: 'italic', color: '#555' }}>
-                  "Oficina de qualidade com aplicação de peças de primeira linha."
+                  "Oficina de qualidade com aplicação de peças de primeira linha. Experiência e conhecimento técnico excelente."
                 </p>
                 <div style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
                   <div style={{ width: '24px', height: '24px', backgroundColor: '#4285f4', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -539,18 +539,18 @@ function App() {
                 </div>
               </div>
               
-              <div style={{ backgroundColor: '#f9f9f9', padding: '2rem', borderRadius: '15px', position: 'relative' }}>
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', position: 'relative', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
                   <div style={{ width: '50px', height: '50px', backgroundColor: '#FFD700', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem' }}>
                     <span style={{ color: '#000', fontWeight: 'bold' }}>JJ</span>
                   </div>
                   <div>
-                    <p style={{ fontWeight: 'bold', margin: 0, color: '#000' }}>Jones J.</p>
+                    <p style={{ fontWeight: 'bold', margin: 0, color: '#000' }}>Jones Jesus</p>
                     <p style={{ fontSize: '0.8rem', margin: 0, color: '#666' }}>Google • 2025</p>
                   </div>
                 </div>
                 <p style={{ fontStyle: 'italic', color: '#555' }}>
-                  "Ótimo lugar para deixar seu carro em mãos de profissionais qualificados!"
+                  "Ótimo lugar para deixar seu carro em mãos de profissionais qualificados! Recomendo muito."
                 </p>
                 <div style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
                   <div style={{ width: '24px', height: '24px', backgroundColor: '#4285f4', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -559,47 +559,59 @@ function App() {
                 </div>
               </div>
             </div>
+            
+            <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: '#fff', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#000', marginBottom: '1rem' }}>
+                📱 Centro de Treinamento TV Oficina Brasil
+              </h3>
+              <p style={{ color: '#666', fontSize: '1.1rem' }}>
+                Nossa sede possui sala de recepção da TV Oficina Brasil, aberta para todos os profissionais 
+                que desejam assistir palestras e atualizar conhecimentos sobre reparação automotiva.
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Contato */}
-        <section style={{ padding: '4rem 1rem', backgroundColor: '#f9f9f9' }}>
+        <section style={{ padding: '4rem 1rem', backgroundColor: '#fff' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#000' }}>
-              Pronto para Cuidar do Seu Veículo?
+              Entre em Contato Conosco
             </h2>
             <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem' }}>
-              Entre em contato conosco e agende seu atendimento. Estamos na região da Saúde, 
-              São Paulo, há mais de 50 anos cuidando de veículos com qualidade e confiança.
+              Estamos na região da Saúde, São Paulo, há mais de 50 anos. 
+              Entre em contato para agendar seu atendimento ou solicitar orçamento.
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
-              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <div style={{ backgroundColor: '#f9f9f9', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📍</div>
                 <h3 style={{ fontSize: '1.3rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#000' }}>Endereço</h3>
-                <p style={{ color: '#666', fontSize: '0.9rem' }}>
+                <p style={{ color: '#666', fontSize: '0.95rem' }}>
                   Av. do Cursino, 2012<br />
-                  Jardim da Saúde, São Paulo - SP
+                  Jardim da Saúde, São Paulo - SP<br />
+                  CEP: 04132-001
                 </p>
               </div>
               
-              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <div style={{ backgroundColor: '#f9f9f9', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📱</div>
                 <h3 style={{ fontSize: '1.3rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#000' }}>WhatsApp</h3>
-                <p style={{ color: '#666', fontSize: '0.9rem' }}>
-                  <button 
-                    style={{ color: '#FFD700', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem', fontWeight: 'bold' }}
-                    onClick={() => window.open('https://wa.me/5511940630515?text=Olá!%20Gostaria%20de%20falar%20sobre%20os%20serviços', '_blank')}
-                  >
-                    (11) 4063-0515
-                  </button>
+                <button 
+                  style={{ color: '#FFD700', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.1rem', fontWeight: 'bold' }}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20Gostaria%20de%20falar%20sobre%20os%20serviços`, '_blank')}
+                >
+                  (11) 95848-9220
+                </button>
+                <p style={{ color: '#666', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+                  Clique para conversar diretamente
                 </p>
               </div>
               
-              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <div style={{ backgroundColor: '#f9f9f9', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🕒</div>
                 <h3 style={{ fontSize: '1.3rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#000' }}>Horário</h3>
-                <p style={{ color: '#666', fontSize: '0.9rem' }}>
+                <p style={{ color: '#666', fontSize: '0.95rem' }}>
                   Segunda a Sexta: 8h às 19h<br />
                   Sábado: 8h às 14h<br />
                   Domingo: Fechado
@@ -607,22 +619,53 @@ function App() {
               </div>
             </div>
             
-            <button 
-              style={{
-                backgroundColor: '#FFD700',
-                color: '#000',
-                border: 'none',
-                padding: '1.5rem 3rem',
-                borderRadius: '30px',
-                fontSize: '1.3rem',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                boxShadow: '0 4px 15px rgba(255, 215, 0, 0.3)'
-              }}
-              onClick={() => window.open('https://wa.me/5511940630515?text=Olá!%20Vi%20o%20site%20da%20Auto%20Check%20Saúde%20e%20gostaria%20de%20conversar', '_blank')}
-            >
-              💬 Falar no WhatsApp Agora
-            </button>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+              <div>
+                <button 
+                  style={{
+                    backgroundColor: '#FFD700',
+                    color: '#000',
+                    border: 'none',
+                    padding: '1.5rem 3rem',
+                    borderRadius: '30px',
+                    fontSize: '1.3rem',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 15px rgba(255, 215, 0, 0.3)',
+                    marginBottom: '1rem',
+                    width: '100%'
+                  }}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20Vi%20o%20site%20da%20Auto%20Check%20Saúde%20e%20gostaria%20de%20conversar`, '_blank')}
+                >
+                  💬 Falar no WhatsApp Agora
+                </button>
+                <p style={{ fontSize: '0.9rem', color: '#888' }}>
+                  Resposta rápida e atendimento personalizado
+                </p>
+              </div>
+              
+              <div style={{ position: 'relative' }}>
+                <img 
+                  src="/images/foto5.jpg"
+                  alt="Equipe Auto Check Saúde"
+                  style={{ width: '100%', maxWidth: '400px', height: '250px', objectFit: 'cover', borderRadius: '15px' }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  bottom: '1rem',
+                  left: '1rem',
+                  right: '1rem',
+                  backgroundColor: 'rgba(0,0,0,0.7)',
+                  color: 'white',
+                  padding: '1rem',
+                  borderRadius: '10px',
+                  textAlign: 'center'
+                }}>
+                  <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Nossa Equipe</h4>
+                  <p style={{ margin: '0.5rem 0 0', fontSize: '0.9rem' }}>Profissionais certificados</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -635,7 +678,7 @@ function App() {
         zIndex: 1000
       }}>
         <button
-          onClick={() => window.open('https://wa.me/5511940630515?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20os%20serviços', '_blank')}
+          onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20os%20serviços`, '_blank')}
           style={{
             backgroundColor: '#FFD700',
             color: '#000',
@@ -649,21 +692,57 @@ function App() {
             height: '60px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            animation: 'pulse 2s infinite'
           }}
         >
           💬
         </button>
       </div>
 
-      <footer style={{ backgroundColor: '#000', color: '#fff', padding: '2rem 1rem', textAlign: 'center' }}>
+      <footer style={{ backgroundColor: '#000', color: '#fff', padding: '3rem 1rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p style={{ marginBottom: '1rem' }}>
-            © 2025 Auto Check Saúde. Todos os direitos reservados.
-          </p>
-          <p style={{ fontSize: '0.9rem', color: '#ccc' }}>
-            Há mais de 50 anos cuidando da saúde do seu veículo em São Paulo
-          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
+            <div>
+              <h3 style={{ color: '#FFD700', fontSize: '1.3rem', marginBottom: '1rem' }}>Auto Check Saúde</h3>
+              <p style={{ color: '#ccc', fontSize: '0.95rem' }}>
+                Tradição de mais de 50 anos em reparação automotiva. 
+                Especialistas em sistema elétrico e injeção eletrônica.
+              </p>
+            </div>
+            
+            <div>
+              <h4 style={{ color: '#FFD700', fontSize: '1.1rem', marginBottom: '1rem' }}>Principais Serviços</h4>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#ccc', fontSize: '0.9rem' }}>
+                <li>• Sistema Elétrico</li>
+                <li>• Injeção Eletrônica</li>
+                <li>• Motor e Câmbio</li>
+                <li>• Ar-condicionado</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 style={{ color: '#FFD700', fontSize: '1.1rem', marginBottom: '1rem' }}>Contato</h4>
+              <p style={{ color: '#ccc', fontSize: '0.9rem', margin: '0.5rem 0' }}>
+                📱 (11) 95848-9220
+              </p>
+              <p style={{ color: '#ccc', fontSize: '0.9rem', margin: '0.5rem 0' }}>
+                📍 Av. do Cursino, 2012
+              </p>
+              <p style={{ color: '#ccc', fontSize: '0.9rem', margin: '0.5rem 0' }}>
+                Jardim da Saúde - São Paulo
+              </p>
+            </div>
+          </div>
+          
+          <div style={{ borderTop: '1px solid #333', paddingTop: '2rem' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              © 2025 Auto Check Saúde. Todos os direitos reservados.
+            </p>
+            <p style={{ fontSize: '0.9rem', color: '#888' }}>
+              Sede própria • Certificações Delphi, GM, Fiat, SEBRAE • TV Oficina Brasil
+            </p>
+          </div>
         </div>
       </footer>
     </div>
