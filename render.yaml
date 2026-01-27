@@ -2,7 +2,7 @@ services:
   # Backend Service (Python/FastAPI)
   - type: web
     name: authcheck-backend
-    env: python
+    runtime: python
     region: oregon
     rootDir: backend
     buildCommand: pip install -r requirements.txt
@@ -16,13 +16,13 @@ services:
         value: "*" # Ajuste conforme necessário para produção
 
   # Frontend Service (React)
-  - type: static
+  - type: web
     name: authcheck-frontend
-    env: static
+    runtime: static
     region: oregon
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishDir: build
+    staticPublishPath: build
     routes:
       - type: rewrite
         source: /*
