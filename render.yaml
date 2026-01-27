@@ -19,7 +19,6 @@ services:
   - type: web
     name: authcheck-frontend
     runtime: static
-    region: oregon
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: build
