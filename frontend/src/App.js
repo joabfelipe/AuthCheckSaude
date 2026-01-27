@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const whatsappNumber = '5511958489220'; // Novo número do WhatsApp
+
   return (
     <div className="App">
       <header style={{
@@ -37,7 +39,7 @@ function App() {
               fontWeight: 'bold',
               cursor: 'pointer'
             }}
-            onClick={() => window.open('https://wa.me/5511940630515?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20os%20serviços', '_blank')}
+            onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20os%20serviços`, '_blank')}
           >
             💬 Falar no WhatsApp
           </button>
@@ -49,74 +51,177 @@ function App() {
         <section style={{
           background: 'linear-gradient(to bottom right, #fff9c4, #ffffff)',
           padding: '4rem 1rem',
-          textAlign: 'center'
+          position: 'relative',
+          overflow: 'hidden'
         }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h1 style={{
-              fontSize: '3rem',
-              fontWeight: 'bold',
-              color: '#000',
-              marginBottom: '1.5rem',
-              lineHeight: '1.1'
-            }}>
-              Segurança & Qualidade em Reparação Automotiva
-            </h1>
-            <p style={{
-              fontSize: '1.3rem',
-              color: '#555',
-              marginBottom: '2rem',
-              maxWidth: '800px',
-              margin: '0 auto 2rem'
-            }}>
-              Há mais de 50 anos cuidando do seu veículo em São Paulo com excelência técnica. 
-              Seguimos normas da ABNT com profissionais constantemente treinados.
-            </p>
-            
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
-              <button 
-                style={{
-                  backgroundColor: '#FFD700',
-                  color: '#000',
-                  border: 'none',
-                  padding: '1rem 2rem',
-                  borderRadius: '25px',
-                  fontSize: '1.1rem',
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+              <div style={{ textAlign: 'center' }}>
+                <h1 style={{
+                  fontSize: '3rem',
                   fontWeight: 'bold',
-                  cursor: 'pointer'
-                }}
-                onClick={() => window.open('https://wa.me/5511940630515?text=Gostaria%20de%20agendar%20um%20check-up%20para%20meu%20veículo', '_blank')}
-              >
-                📋 Agendar Check-up
-              </button>
-              <button 
-                style={{
-                  backgroundColor: 'transparent',
                   color: '#000',
-                  border: '2px solid #000',
-                  padding: '1rem 2rem',
-                  borderRadius: '25px',
-                  fontSize: '1.1rem',
-                  fontWeight: 'bold',
-                  cursor: 'pointer'
-                }}
-                onClick={() => window.open('https://wa.me/5511940630515?text=Preciso%20de%20um%20orçamento%20para%20meu%20veículo', '_blank')}
-              >
-                💰 Solicitar Orçamento
-              </button>
+                  marginBottom: '1.5rem',
+                  lineHeight: '1.1'
+                }}>
+                  Tradição e Excelência em Reparação Automotiva
+                </h1>
+                <p style={{
+                  fontSize: '1.3rem',
+                  color: '#555',
+                  marginBottom: '2rem',
+                  maxWidth: '800px',
+                  margin: '0 auto 2rem'
+                }}>
+                  Desde o final da década de 60 cuidando do seu veículo em São Paulo. 
+                  Especialistas certificados com tecnologia de ponta e atendimento personalizado.
+                </p>
+                
+                <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
+                  <button 
+                    style={{
+                      backgroundColor: '#FFD700',
+                      color: '#000',
+                      border: 'none',
+                      padding: '1rem 2rem',
+                      borderRadius: '25px',
+                      fontSize: '1.1rem',
+                      fontWeight: 'bold',
+                      cursor: 'pointer'
+                    }}
+                    onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20agendar%20um%20check-up%20para%20meu%20veículo`, '_blank')}
+                  >
+                    📋 Agendar Check-up
+                  </button>
+                  <button 
+                    style={{
+                      backgroundColor: 'transparent',
+                      color: '#000',
+                      border: '2px solid #000',
+                      padding: '1rem 2rem',
+                      borderRadius: '25px',
+                      fontSize: '1.1rem',
+                      fontWeight: 'bold',
+                      cursor: 'pointer'
+                    }}
+                    onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Preciso%20de%20um%20orçamento%20para%20meu%20veículo`, '_blank')}
+                  >
+                    💰 Solicitar Orçamento
+                  </button>
+                </div>
+                
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontSize: '1.5rem' }}>🏆</span>
+                    <span style={{ fontWeight: '600' }}>Certificações Delphi</span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontSize: '1.5rem' }}>👨‍🔧</span>
+                    <span style={{ fontWeight: '600' }}>Técnicos Especializados</span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontSize: '1.5rem' }}>✅</span>
+                    <span style={{ fontWeight: '600' }}>Garantia Total</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto real da oficina */}
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(0,0,0,0.2)' }}>
+                  <img 
+                    src="/images/foto1.jpg"
+                    alt="Fachada da Auto Check Saúde"
+                    style={{ width: '100%', maxWidth: '500px', height: '350px', objectFit: 'cover' }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '1rem',
+                    left: '1rem',
+                    right: '1rem',
+                    backgroundColor: 'rgba(0,0,0,0.7)',
+                    color: 'white',
+                    padding: '1rem',
+                    borderRadius: '10px',
+                    textAlign: 'center'
+                  }}>
+                    <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Nossa Sede Própria</h3>
+                    <p style={{ margin: '0.5rem 0 0', fontSize: '0.9rem' }}>Av. do Cursino, 2012 - São Paulo</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                <span style={{ fontSize: '1.5rem' }}>🛡️</span>
-                <span style={{ fontWeight: '600' }}>Diagnóstico Transparente</span>
+          </div>
+        </section>
+
+        {/* Galeria de Fotos da Oficina */}
+        <section style={{ padding: '4rem 1rem', backgroundColor: '#fff' }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '3rem', color: '#000' }}>
+              Nossa Oficina
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+              <div style={{ position: 'relative', borderRadius: '15px', overflow: 'hidden', height: '250px' }}>
+                <img 
+                  src="/images/foto2.jpg"
+                  alt="Interior da oficina"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                  color: 'white',
+                  padding: '2rem 1rem 1rem',
+                  fontSize: '1.1rem',
+                  fontWeight: 'bold'
+                }}>
+                  Área de Trabalho
+                </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                <span style={{ fontSize: '1.5rem' }}>👥</span>
-                <span style={{ fontWeight: '600' }}>Equipe Especializada</span>
+              
+              <div style={{ position: 'relative', borderRadius: '15px', overflow: 'hidden', height: '250px' }}>
+                <img 
+                  src="/images/foto3.jpg"
+                  alt="Equipamentos modernos"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                  color: 'white',
+                  padding: '2rem 1rem 1rem',
+                  fontSize: '1.1rem',
+                  fontWeight: 'bold'
+                }}>
+                  Equipamentos Modernos
+                </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                <span style={{ fontSize: '1.5rem' }}>✅</span>
-                <span style={{ fontWeight: '600' }}>Garantia no Serviço</span>
+              
+              <div style={{ position: 'relative', borderRadius: '15px', overflow: 'hidden', height: '250px' }}>
+                <img 
+                  src="/images/foto4.jpg"
+                  alt="Equipe especializada"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                  color: 'white',
+                  padding: '2rem 1rem 1rem',
+                  fontSize: '1.1rem',
+                  fontWeight: 'bold'
+                }}>
+                  Equipe Técnica
+                </div>
               </div>
             </div>
           </div>
