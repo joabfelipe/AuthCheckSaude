@@ -227,16 +227,16 @@ function App() {
           </div>
         </section>
 
-        {/* Serviços */}
+        {/* Serviços Completos */}
         <section style={{ padding: '4rem 1rem', backgroundColor: '#f9f9f9' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '3rem', color: '#000' }}>
-              Nossos Principais Serviços
+              Nossos Serviços Especializados
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
               <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>Sistema Elétrico</h3>
-                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Nossa especialidade original há mais de 50 anos. Diagnóstico e reparo completo.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>⚡ Sistema Elétrico</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Nossa especialidade original desde a década de 60. Diagnóstico completo e reparos precisos.</p>
                 <button 
                   style={{
                     backgroundColor: '#FFD700',
@@ -248,15 +248,15 @@ function App() {
                     width: '100%',
                     fontWeight: 'bold'
                   }}
-                  onClick={() => window.open('https://wa.me/5511940630515?text=Gostaria%20de%20orçamento%20para%20sistema%20elétrico', '_blank')}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20sistema%20elétrico`, '_blank')}
                 >
                   Solicitar Orçamento
                 </button>
               </div>
               
               <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>Injeção Eletrônica</h3>
-                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Diagnóstico e reparo com equipamentos de última geração.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>🔧 Injeção Eletrônica</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Técnicos certificados Delphi. Diagnóstico avançado com equipamentos de última geração.</p>
                 <button 
                   style={{
                     backgroundColor: '#FFD700',
@@ -268,15 +268,15 @@ function App() {
                     width: '100%',
                     fontWeight: 'bold'
                   }}
-                  onClick={() => window.open('https://wa.me/5511940630515?text=Gostaria%20de%20orçamento%20para%20injeção%20eletrônica', '_blank')}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20injeção%20eletrônica`, '_blank')}
                 >
                   Solicitar Orçamento
                 </button>
               </div>
               
               <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>Reparação de Motor</h3>
-                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Serviços completos de motor incluindo retífica e usinagem.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>🚗 Motor</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Reparos completos, retífica e usinagem com precisão. Experiência em todas as marcas.</p>
                 <button 
                   style={{
                     backgroundColor: '#FFD700',
@@ -288,15 +288,15 @@ function App() {
                     width: '100%',
                     fontWeight: 'bold'
                   }}
-                  onClick={() => window.open('https://wa.me/5511940630515?text=Gostaria%20de%20orçamento%20para%20reparação%20de%20motor', '_blank')}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20reparação%20de%20motor`, '_blank')}
                 >
                   Solicitar Orçamento
                 </button>
               </div>
               
               <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>Ar-condicionado</h3>
-                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Manutenção e reparo completo do sistema de climatização.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>❄️ Ar-condicionado</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Manutenção completa do sistema de climatização. Carga de gás e limpeza.</p>
                 <button 
                   style={{
                     backgroundColor: '#FFD700',
@@ -308,11 +308,174 @@ function App() {
                     width: '100%',
                     fontWeight: 'bold'
                   }}
-                  onClick={() => window.open('https://wa.me/5511940630515?text=Gostaria%20de%20orçamento%20para%20ar-condicionado', '_blank')}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20ar-condicionado`, '_blank')}
                 >
                   Solicitar Orçamento
                 </button>
               </div>
+
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>🔧 Câmbio</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Manutenção e reparo de câmbio manual e automático. Diagnóstico preciso.</p>
+                <button 
+                  style={{
+                    backgroundColor: '#FFD700',
+                    color: '#000',
+                    border: 'none',
+                    padding: '0.8rem 1.5rem',
+                    borderRadius: '20px',
+                    cursor: 'pointer',
+                    width: '100%',
+                    fontWeight: 'bold'
+                  }}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20câmbio`, '_blank')}
+                >
+                  Solicitar Orçamento
+                </button>
+              </div>
+
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>🛞 Freios</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Sistema de freios completo. Pastilhas, discos, cilindros e fluidos.</p>
+                <button 
+                  style={{
+                    backgroundColor: '#FFD700',
+                    color: '#000',
+                    border: 'none',
+                    padding: '0.8rem 1.5rem',
+                    borderRadius: '20px',
+                    cursor: 'pointer',
+                    width: '100%',
+                    fontWeight: 'bold'
+                  }}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20freios`, '_blank')}
+                >
+                  Solicitar Orçamento
+                </button>
+              </div>
+
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>🔧 Suspensão</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Amortecedores, molas, buchas e todo o sistema de suspensão.</p>
+                <button 
+                  style={{
+                    backgroundColor: '#FFD700',
+                    color: '#000',
+                    border: 'none',
+                    padding: '0.8rem 1.5rem',
+                    borderRadius: '20px',
+                    cursor: 'pointer',
+                    width: '100%',
+                    fontWeight: 'bold'
+                  }}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20orçamento%20para%20suspensão`, '_blank')}
+                >
+                  Solicitar Orçamento
+                </button>
+              </div>
+
+              <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem', color: '#000' }}>🏆 Outros Serviços</h3>
+                <p style={{ color: '#666', marginBottom: '1.5rem' }}>Arrefecimento, velas, lubrificação, escapamento, rodas e pneus.</p>
+                <button 
+                  style={{
+                    backgroundColor: '#FFD700',
+                    color: '#000',
+                    border: 'none',
+                    padding: '0.8rem 1.5rem',
+                    borderRadius: '20px',
+                    cursor: 'pointer',
+                    width: '100%',
+                    fontWeight: 'bold'
+                  }}
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Gostaria%20de%20saber%20sobre%20outros%20serviços%20disponíveis`, '_blank')}
+                >
+                  Consultar Disponibilidade
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Certificados e Premiações */}
+        <section style={{ padding: '4rem 1rem', backgroundColor: '#fff' }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '3rem', color: '#000' }}>
+              Certificações e Premiações
+            </h2>
+            <p style={{ textAlign: 'center', fontSize: '1.2rem', color: '#666', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem' }}>
+              Reconhecimentos que comprovam nossa excelência técnica e compromisso com a qualidade.
+            </p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
+                <img 
+                  src="/certificates/autocheck_certificado_delphi_2008.jpg"
+                  alt="Certificado Delphi"
+                  style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }}
+                />
+                <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>Delphi 2008</h3>
+                <p style={{ fontSize: '0.8rem', color: '#666' }}>Injeção Eletrônica</p>
+              </div>
+              
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
+                <img 
+                  src="/certificates/autocheck_certificado_GM_2005.jpg"
+                  alt="Certificado GM"
+                  style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }}
+                />
+                <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>General Motors</h3>
+                <p style={{ fontSize: '0.8rem', color: '#666' }}>Certificação 2005</p>
+              </div>
+              
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
+                <img 
+                  src="/certificates/autocheck_certificado_sindirepa_2009.jpg"
+                  alt="Certificado Sindirepa"
+                  style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }}
+                />
+                <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>Sindirepa</h3>
+                <p style={{ fontSize: '0.8rem', color: '#666' }}>Associação 2009</p>
+              </div>
+              
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
+                <img 
+                  src="/awards/Autocheck_premio_top_2011.jpg"
+                  alt="Prêmio Top 2011"
+                  style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }}
+                />
+                <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>Prêmio Top</h3>
+                <p style={{ fontSize: '0.8rem', color: '#666' }}>Destaque 2011</p>
+              </div>
+              
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
+                <img 
+                  src="/certificates/autocheck_certificado_fiat_2010.jpg"
+                  alt="Certificado Fiat"
+                  style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }}
+                />
+                <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>Fiat</h3>
+                <p style={{ fontSize: '0.8rem', color: '#666' }}>Certificação 2010</p>
+              </div>
+              
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
+                <img 
+                  src="/certificates/autocheck_certificado_sebrae_2003.jpg"
+                  alt="Certificado SEBRAE"
+                  style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }}
+                />
+                <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>SEBRAE</h3>
+                <p style={{ fontSize: '0.8rem', color: '#666' }}>Capacitação 2003</p>
+              </div>
+            </div>
+            
+            <div style={{ textAlign: 'center', backgroundColor: '#FFD700', padding: '2rem', borderRadius: '20px', marginTop: '3rem' }}>
+              <h3 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#000', margin: '0 0 1rem' }}>
+                💯 Mais de 20 Certificações
+              </h3>
+              <p style={{ color: '#000', fontSize: '1.1rem', margin: 0 }}>
+                Magneti Marelli, Bosch, Goodyear, CETESB, ASE e muito mais!
+              </p>
             </div>
           </div>
         </section>
