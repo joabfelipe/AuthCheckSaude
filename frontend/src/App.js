@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   // WhatsApp oficial da Auto Check Saúde
-  const whatsappNumber = '5511958489220';
+  const whatsappNumber = '5511940630515';
   const phoneDisplay = '(11) 4063-0515';
   const phoneTel = '+551140630515';
   const mapQuery = 'Auto Check Saúde, Av. do Cursino, 2012 - Jardim da Saúde, São Paulo - SP, 04132-001';
@@ -465,7 +465,7 @@ function App() {
               Reconhecimentos que comprovam nossa excelência técnica e compromisso com a qualidade.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+            <div className="acs-certs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
               <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
                 <img src="/certificates/autocheck_certificado_delphi_2008.jpg" alt="Certificado Delphi" style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }} />
                 <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>Delphi 2008</h3>

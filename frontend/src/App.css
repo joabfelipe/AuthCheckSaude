@@ -621,3 +621,14 @@ main {
 .acs-link-btn:hover {
   background: rgba(0, 0, 0, 0.05);
 }
+
+/* Certificações - centralização perfeita no mobile */
+.acs-certs-grid {
+  justify-content: center; /* se sobrar espaço, centraliza as colunas */
+}
+
+.acs-certs-grid img {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
