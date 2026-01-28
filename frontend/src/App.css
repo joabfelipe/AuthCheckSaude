@@ -476,6 +476,13 @@ main {
   gap: 1rem;
 }
 
+.acs-brand-logo {
+  height: clamp(40px, 6vw, 56px);
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .acs-header-cta {
   display: flex;
   align-items: center;

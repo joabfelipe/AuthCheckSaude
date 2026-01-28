@@ -35,9 +35,9 @@ function App() {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="acs-header-inner">
           <div className="acs-brand">
             <img
-              src="/logo.svg"
+              className="acs-brand-logo"
+              src="/logo-oficial.png"
               alt="Auto Check Saúde"
-              style={{ height: '44px', width: 'auto' }}
             />
             <div>
               <h1
