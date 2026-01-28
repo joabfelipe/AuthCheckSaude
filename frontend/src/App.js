@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   // WhatsApp oficial da Auto Check Saúde
-  const whatsappNumber = '5511940630515';
+  const whatsappNumber = '5511958489220';
   const phoneDisplay = '(11) 4063-0515';
   const phoneTel = '+551140630515';
   const mapQuery = 'Auto Check Saúde, Av. do Cursino, 2012 - Jardim da Saúde, São Paulo - SP, 04132-001';
