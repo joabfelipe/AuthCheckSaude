@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const whatsappNumber = '5511958489220';
+  // WhatsApp oficial da Auto Check Saúde
+  const whatsappNumber = '5511940630515';
   const phoneDisplay = '(11) 4063-0515';
   const phoneTel = '+551140630515';
   const mapQuery = 'Auto Check Saúde, Av. do Cursino, 2012 - Jardim da Saúde, São Paulo - SP, 04132-001';
@@ -34,9 +35,9 @@ function App() {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="acs-header-inner">
           <div className="acs-brand">
             <img
-              src="https://autochecksaude.com.br/wp-content/uploads/2020/10/logo.png"
+              src="/logo.svg"
               alt="Auto Check Saúde"
-              style={{ height: '50px', width: 'auto', maxWidth: '180px' }}
+              style={{ height: '44px', width: 'auto' }}
             />
             <div>
               <h1
@@ -476,7 +477,8 @@ function App() {
                 <p style={{ fontSize: '0.8rem', color: '#666' }}>Certificação 2005</p>
               </div>
               <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '15px' }}>
-                <img src="/certificates/autocheck_certificado_sindirepa_2009.jpg" alt="Certificado Sindirepa" style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }} />
+                {/* Atenção: em produção (Vercel/Linux) o caminho é case-sensitive */}
+                <img src="/certificates/Autocheck_certificado_sindirepa_2009.jpg" alt="Certificado Sindirepa" style={{ width: '100%', maxWidth: '150px', height: '120px', objectFit: 'cover', borderRadius: '10px', marginBottom: '1rem' }} />
                 <h3 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#000', margin: '0.5rem 0' }}>Sindirepa</h3>
                 <p style={{ fontSize: '0.8rem', color: '#666' }}>Associação 2009</p>
               </div>
