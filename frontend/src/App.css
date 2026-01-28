@@ -49,6 +49,12 @@ body {
   line-height: 1.6;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .App {
   min-height: 100vh;
   display: flex;
@@ -450,4 +456,161 @@ main {
   width: 16px;
   height: 16px;
   fill: #fbbf24;
+}
+
+/* =============================
+   Auto Check Saúde - Ajustes de responsividade
+   ============================= */
+
+.acs-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.acs-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.acs-header-cta {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 520px) {
+  .acs-header-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .acs-brand {
+    justify-content: center;
+  }
+
+  .acs-header-cta {
+    width: 100%;
+  }
+
+  .acs-header-cta button {
+    width: 100%;
+  }
+}
+
+.acs-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .acs-hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.acs-hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.acs-hero-cta > button {
+  flex: 1 1 220px;
+  max-width: 320px;
+}
+
+@media (max-width: 600px) {
+  .acs-hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .acs-hero-cta > button {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.acs-grid-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.acs-grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.acs-grid-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.acs-grid-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.acs-contact-cta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .acs-contact-cta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.acs-grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.acs-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+}
+
+@media (max-width: 520px) {
+  .acs-fab {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+.acs-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acs-link-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
